@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2px;
+        }
+        .navbar{
+            background-color: black;
+            display: flex;
+            height: 55px;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 22px;
+            border-radius: 5px;
+        }
+        .navlink{
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #f26a3e;
+            font-weight: bolder;
+        }
+        .inner-navbar{
+            display: flex;
+            justify-content: center;
+        }
+        .inner-navlink{
+            text-decoration: none;
+            padding: 0px 15px;
+            color: white;
+            font-size:1.2rem ;
+        }
+        .btn{
+            color: white;
+            text-decoration: none;
+            background-color: #f26a3e;
+            padding: 4px 15px;
+            font-weight: bolder;
+            font-size: 1.3rem;
+            border-radius: 5px;
+        }
+        @media (max-width:670px) {
+            .navbar{
+                flex-direction: column;
+                height: auto;
+                text-align: center;
+                padding: 0;
+            }
+            .navlink{
+                border-bottom: 1px solid grey;
+                width: 100%;
+                padding: 8px 0px;
+            }
+            .inner-navbar{
+                flex-direction: column;
+                text-align: center;
+                width: 80%;
+            }
+            .inner-navlink{
+                border-bottom: 1px solid grey;
+                padding: 8px 0px;
+            }
+            .btn{
+                width: 50%;
+                padding: 8px 0px;
+                margin-top: 5px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="#" class="navlink">TuteDude</a>
+
+        <div class="inner-navbar">
+            <a href="#" class="inner-navlink">Home</a>
+            <a href="#" class="inner-navlink">About</a>
+            <a href="#" class="inner-navlink">Support</a>
+            <a href="#" class="inner-navlink">Contact</a>
+        </div>
+
+        <a href="#" class="btn">LOGIN</a>
+
+    </div>
+
+    
+</body>
+</html>

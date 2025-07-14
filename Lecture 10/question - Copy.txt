@@ -1,0 +1,22 @@
+Story:
+A startup named GreenGo is building an eco-friendly ride-sharing app. The web team is designing a driver registration form in HTML to collect the following information:
+
+Full Name
+
+Email ID
+
+Phone Number (10 digits only)
+
+Password (must include at least one uppercase letter, one lowercase letter, one number, and one special character)
+
+Age (between 21 and 60)
+
+Vehicle Registration Number (e.g., MH12AB1234 — exactly 10 characters)
+
+City (dropdown: Mumbai, Delhi, Bangalore)
+
+A checkbox for accepting terms and conditions
+
+Submit button
+
+A note: the Email ID field should be pre-filled and uneditable during form updates.

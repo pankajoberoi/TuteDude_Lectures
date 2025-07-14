@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*.image{
+            height: 100vh;
+            border: 10px solid saddlebrown;
+            background-image: url(Virat.jpg);
+            background-repeat: no-repeat;
+            background-size: 20% 70%;
+            background-position: top;
+            font-size: 100px;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            text-decoration: underline;
+        }*/
+      /*.box{
+            height: 300px;
+            width: 300px;
+            border: 3px solid black;
+           background-color: blue;
+           background: linear-gradient(orange,purple,pink,skyblue);
+
+        }*/
+
+      :root {
+        --parentBackground: rgba(221, 6, 182, 0.259);
+      }
+
+      .container {
+        border: 3px solid black;
+        width: 300px;
+        padding: 6px;
+        /*box-shadow: -10px -10px skyblue;*/
+        /*box-shadow: 15px 10px 7px aqua;*/
+        box-shadow: 10px 10px 4px 2px skyblue;
+      }
+      .parent {
+        background-color: var(--parentBackground);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .heading {
+        --orange: rgba(216, 141, 0, 0.872);
+        text-shadow: 2px 2px 2px var(--orange);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="image">
+        Indian Captain
+    </div> -->
+
+    <!-- <div class="box"></div> -->
+
+    <div class="parent">
+      <div class="container">
+        <h1 class="heading">TuteDude</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
+          similique quis sed aspernatur accusamus ipsam dolorem non voluptatibus
+          aut quas laborum, voluptatum atque quisquam impedit consequatur
+          cupiditate, et doloremque quibusdam?
+        </p>
+        <button>Register</button>
+      </div>
+    </div>
+  </body>
+</html>

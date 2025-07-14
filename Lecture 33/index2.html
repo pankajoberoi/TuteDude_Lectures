@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .screen {
+        border: 5px solid black;
+        display: grid;
+        height: 100vh;
+        grid-template-areas:
+          "nav nav nav"
+          "content content img"
+          "footer footer footer";
+      }
+      .component {
+        border: 2px solid black;
+        font-size: 40px;
+        text-align: center;
+      }
+      .item-1 {
+        grid-area: nav;
+        background-color: aquamarine;
+      }
+      .item-2 {
+        grid-area: content;
+        background-color: burlywood;
+      }
+      .item-3 {
+        grid-area: img;
+        background-color: red;
+      }
+      .item-4 {
+        background-color: darkgoldenrod;
+      }
+      .item-5 {
+        grid-area: footer;
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="screen">
+      <div class="component item-1">Navbar</div>
+      <div class="component item-2">Blog Content</div>
+      <div class="component item-3">img</div>
+      <div class="component item-5">Footer</div>
+    </div>
+  </body>
+</html>

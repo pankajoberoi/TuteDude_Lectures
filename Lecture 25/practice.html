@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: beige;
+        }
+        h2{
+            margin-top: 40px;
+            color: #333;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .navbar .menu{
+            display: flex;
+            gap: 20px;
+        }
+
+        .card-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .card{
+            width: 200px;
+            height: 150px;
+            padding: 10px;
+            background-color: #e0e0e0;
+            text-align: center;
+            line-height: 130px;
+        }
+
+        .footer{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .layout{
+            display: flex;
+            height: 200px;
+            margin-top: 20px;
+        }
+
+        .sidebar{
+            flex-basis: 25%;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        .main-content{
+            flex-grow: 2;
+            background-color: #d0d0d0;
+            padding: 10px;
+        }
+
+        .login-wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+            background: #f9f9f9;
+            margin-top: 20px;
+        }
+
+        .login-box{
+            background: white;
+            padding: 20px;
+            border: 2px solid black;
+            width: 250px;
+        }
+        .login-box input{
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .login-box button{
+            padding: 8px 12px;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+       
+
+
+    </style>
+</head>
+<body>
+    <h2>Navigation Bar</h1>
+    <div class="navbar">
+        <div>PANKAJ</div>
+        <div class="menu">
+            <div>Home</div>
+            <div>About</div>
+            <div>Contact</div>
+        </div>
+        <button>Login</button>
+    </div>
+
+    <h2>Product grid</h2>
+    <div class="card-container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+    </div>
+
+    <h2>Responsive Footer</h2>
+    <div class="footer">
+        <div>About Us</div>
+        <div>Contact</div>
+        <div>Service</div>
+    </div>
+
+    <h2>SideBar and Content Layout</h2>
+    <div class="layout">
+        <div class="sidebar">Sidebar</div>
+        <div class="main-content">Main - Content</div>
+    </div>
+
+    <h2>Login form centered</h2>
+    <div class="login-wrapper">
+        <div class="login-box">
+            <h3>LOGIN</h3>
+            <input type="text" placeholder="Enter Your name">
+            <input type="password" placeholder="Your Password">
+            <button>Login</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .screen {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+        background: linear-gradient(skyblue, purple, pink);
+        text-align: center;
+        font-size: 30px;
+        transition: all 1s linear;
+      }
+
+      .box:hover {
+        /*transform: translateX(-200px);*/
+        /*transform: translateY(-200px);*/
+        /*transform: translate(200px, 300px);*/
+        /*transform: rotateZ(180deg);*/
+        /*transform: scaleX(3);*/
+        /*transform: skewY(-45deg);*/
+        /*transform: perspective(300px) translateZ(-250px);*/
+        transform: perspective(300px) scaleZ(2) rotateY(-45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transform Property</h1>
+    <div class="screen">
+      <div class="box">Translate,Rotate,<br />Scale,Skew</div>
+    </div>
+  </body>
+</html>

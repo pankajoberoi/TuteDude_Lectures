@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .glow {
+        padding: 15px 30px;
+        color: white;
+        background: #222;
+        border: 2px solid #0ff;
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .glow:hover {
+        background: #0ff;
+        color: #000;
+        box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="glow">Hover To Glow</button>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            border: 5px solid black;
+            background-color: beige;
+            display: flex;
+            height: 900px;
+            flex-direction: row;
+            /*flex-wrap:wrap;*/
+            justify-content: center;
+            align-items: center;
+            /*align-content: start;*/
+
+        }
+        .box{
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            margin: 3px;
+            font-size: 40px;
+        }
+        #Dabba1{
+            background-color: brown;
+        }
+        #Dabba2{
+            background-color: yellow;
+            /*flex-grow: 2;*/
+            /*align-self: flex-start;*/
+        }
+        #Dabba3{
+            background-color: green;
+            flex-shrink: 3;
+            /*order: -1;*/
+        }
+        #Dabba4{
+            background-color: orange;
+            /*order:-2;*/
+            /*flex-grow: 3;*/
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="Dabba1"> box 1</div>
+        <div class="box" id="Dabba2"> box 2</div>
+        <div class="box" id="Dabba3"> box 3</div>
+        <div class="box" id="Dabba4"> box 4</div>
+    </div>
+</body>
+</html>

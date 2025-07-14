@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container{
+        width:200px;
+        height: 200px;
+        border: 2px solid black;
+        background-color: aqua;
+      }
+      .container:hover{
+        width:300px;
+        height: 300px;
+        background-color: green;
+        border-radius: 100%;
+      }
+      button:active{
+        /*zoom*/
+        transform: scale(2);
+      }
+
+      input:hover{
+        background-color: lightgreen;
+      }
+
+      input:focus{
+        background-color: red;
+      }
+
+      li:first-child{
+        color: red;
+      }    
+      
+      li:nth-of-type(odd){
+        font-style: italic;
+      }
+
+      p::first-letter{
+        font-size: 60px;
+      }
+
+      p::first-line{
+        text-decoration: underline;
+      }
+
+      input[type="checkbox"]:checked + label {
+        color: blue;
+        font-weight: bold;
+      }
+
+      a:visited{
+        color:crimson;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h3>Hover Property</h3>
+    <div class="container"></div>
+    <button>Sumit</button>
+
+    <h3>focus property</h3>
+    Name : <input type="text" placeholder="Enter Your name">
+    <!-- hw => button -->
+
+    <h3>List Ke liye external css properties</h3>
+    <ul>
+      <li>Virat Kohli (Captain)</li>
+      <li>MS Dhoni</li>
+      <li>Jarprit Bumrah</li>
+      <li>Hardik Pandya</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Tempore nisi dolorem, incidunt illum ad corrupti voluptatem maiores! Provident, in. <br> Consectetur nisi, dolorem voluptatem beatae ullam obcaecati unde ad voluptatibus reprehenderit, ipsa dolores in. Nisi optio, ut atque soluta ea modi?</p>
+
+    <h3>Visited Link</h3>
+    <!-- initially -> blue => visit => blue  -->
+    <a href="https://www.netflix.com/in/" target="_blank">Netflix</a>
+
+    <h3>Checked checkbox</h3>
+    <input type="checkbox" id="check">
+    <label for="check">Agree to terms</label>
+
+  </body>
+</html>
