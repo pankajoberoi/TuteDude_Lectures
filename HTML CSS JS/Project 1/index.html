@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <!-- left -->
+      <section class="app-info">
+        <h1 class="brand-title">SkyCast</h1>
+        <p class="brand-subtitle">
+          Check live weather for any city in the world.
+        </p>
+
+        <ul class="feature-list">
+          <li>Instant temperature & conditions</li>
+          <li>Wind speed & humidity at a glance</li>
+          <li>Clean, distraction-free design</li>
+        </ul>
+
+        <p class="small-hint">
+          Tip: Try <span>Delhi</span>, <span>London</span> , or
+          <span>Tokyo</span>.
+        </p>
+      </section>
+
+      <!-- right -->
+      <section class="card">
+        <header class="card-header">
+          <div>
+            <h2 class="card-title">Weather Now</h2>
+            <p class="card-caption">Enter a city to get current weather</p>
+          </div>
+
+          <div class="card-badge">
+            <span class="dot">Live</span>
+          </div>
+        </header>
+
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Search with city name.."
+            spellcheck="false"
+          />
+          <button>
+            <img src="./images/search.png" alt="" />
+          </button>
+        </div>
+
+        <div class="error">City not found .Try again!!!</div>
+
+        <section class="weather">
+          <div class="weather-main">
+            <img
+              src="./images/clear.png"
+              alt="Weather icon"
+              class="weather-icon"
+            />
+
+            <div class="weather-primary">
+              <h1 class="temp">22°C</h1>
+              <h2 class="city">New York</h2>
+              <p class="weather-desc">Current conditions from OpenWeather</p>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="details">
+            <div class="detail-item">
+              <div class="detail-icon-wrap">
+                <img src="./images/humidity.png" alt="Humidity Icon" />
+              </div>
+              <div class="detail-text">
+                <p class="detail-label">Humidity</p>
+                <p class="humidity">50%</p>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <div class="detail-icon-wrap">
+                <img src="./images/wind.png" alt="Wind icon" />
+              </div>
+              <div class="detail-text">
+                <p class="detail-label">Wind Speed</p>
+                <p class="wind">20 KM/h</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="card-footer">
+          <p>Data by <span>OpenWeatherMap</span></p>
+        </footer>
+      </section>
+    </div>
+
+    <script src="Weather.js"></script>
+  </body>
+</html>

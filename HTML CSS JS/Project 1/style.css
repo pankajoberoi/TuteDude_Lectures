@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --bg: radial-gradient(circle at top left, #4f46e5, #020617);
+  --card-bg: rgba(15, 23, 42, 0.96);
+  --accent: #38bdf8;
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+}
+
+
+body{
+    font-family:sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--text-main);
+    padding: 24px;
+}
+
+
+/* Layout wrapper */
+
+
+
+.app-wrapper{
+    width: 100%;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1.1fr 1.1fr;
+    gap: 32px;
+}
+
+
+@media (max-width:768px) {
+    .app-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* left pannel */
+
+
+.app-info{
+    padding: 24px 12px 24px 4px;
+    
+}
+
+.brand-title{
+    /* dynamic typography */
+    font-size:clamp(2.2rem,2.5vw,2.6rem) ;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+}
+
+.brand-subtitle{
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    max-width: 350px;
+}
+
+.feature-list{
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.feature-list li {
+    font-size: 0.9rem;
+    color: var(--text-main);
+    margin-bottom: 6px;
+}
+
+.small-hint{
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.small-hint span{
+    color: var(--accent);
+    font-weight: 600;
+}
+
+
+/* Right panel */
+
+.card{
+    width: 100%;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 20px 18px 14px;
+    border: 1px solid grey;
+
+}
+
+.card-header{
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    margin-bottom: 10px;
+}
+
+.card-title{
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.card-caption{
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.card-badge{
+    font-size: 0.7rem;
+    border: 1px solid grey;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    gap: 10px;
+}
+
+.search input{
+    outline: none;
+    background: black;
+    color: var(--text-main);
+    padding: 10px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid grey;
+}
+
+.search input:focus{
+    border-color: var(--accent);
+}
+
+.search button{
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 18px;
+}
+
+.error{
+    font-size: 0.8rem;
+    color: pink;
+    background: red;
+    padding: 8px 10px;
+    margin-top: 6px;
+    border-radius: 10px;
+    display: none;
+}
+
+
+.weather{
+    margin-top: 10px;
+    display: none;
+}
+
+.weather-main{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.weather-icon{
+    width: 110px;
+}
+
+.weather-primary{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.temp{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.city{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.weather-desc{
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.divider{
+    background: grey;
+    margin: 14px 0 10px;
+    height: 1px;
+}
+
+
+.details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+}
+
+.detail-item{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background: #020617;
+    padding: 8px 10px;
+    border-radius: 12px;
+}
+
+.detail-icon-wrap img{
+    width: 24px;
+}
+
+.detail-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.detail-label{
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.humidity,.wind{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.card-footer{
+    margin-top: 10px;
+    padding: 8px;
+    border-top:1px dashed grey ;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+@media (max-width:768px) {
+    body{
+        padding: 16px;
+    }
+    .card{
+        padding: 16px;
+    }
+    .weather-icon{
+        width: 90px;
+    }
+    .temp{
+        font: 2.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
