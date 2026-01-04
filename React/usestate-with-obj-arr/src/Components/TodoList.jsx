@@ -15,7 +15,7 @@ const TodoList = () => {
     <div>
 
         <form onSubmit={(e)=> addTask(e)}>
-            <input placeholder='Enter the name' />
+            <input placeholder='Enter the Todo' />
              {/* H/W when you add next item -> pichle item ko saafkarna */}
             <button>Submit</button>
         </form>
