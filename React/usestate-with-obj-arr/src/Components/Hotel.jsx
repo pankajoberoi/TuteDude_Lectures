@@ -8,7 +8,7 @@ const Hotel = () => {
             {id:1,type:"Deluxe",booked:false},
             {id:2,type:"Suite", booked:false}
         ]
-    })
+    }) 
 
 
     const bookRoom = (id) => {
