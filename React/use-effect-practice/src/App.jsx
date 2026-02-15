@@ -1,15 +1,21 @@
-import { use } from "react"
-import { useState } from "react"
-import ChatRoom from "./components/ChatRoom"
+import Discord from "./components/Discord"
 import Page from "./components/Page"
+import Timer from "./components/Timer"
+import Tracker from "./components/Tracker"
+
 
 function App() {
-  const [roomId,setRoomId]=useState('general')
-  const [show,setShow]=useState(false)
+  
 
   return (
     <>
-      <Page/>
+      {/* <Discord/> */}
+      
+      {/* <Tracker/> */}
+
+      {/* <Page/> */}
+
+      <Timer/>
     </>
   )
 }
