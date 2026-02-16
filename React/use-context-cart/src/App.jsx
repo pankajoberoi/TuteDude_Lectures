@@ -1,9 +1,12 @@
 import Cart from "./Components/Cart"
-import Form from "./Components/Form"
-import Notification from "./Components/Notification"
+import Notifictions from "./Components/Notifictions"
 import ProductList from "./Components/ProductList"
+import UserForm from "./Components/UserForm"
 import CartProvider from "./Context/CartProvider"
-import { NotificationProvider } from "./Context/NotificationProvider"
+import NotificationsProvider from "./Context/NotificationsProvider"
+import { ToastContainer } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   
@@ -15,10 +18,14 @@ function App() {
         <Cart/>
       </CartProvider> */}
 
-      <NotificationProvider>
-        <Form/>
-        <Notification/>
-      </NotificationProvider>
+      <NotificationsProvider>
+        <UserForm/>
+        <Notifictions/>
+        <ToastContainer />
+      </NotificationsProvider>
+      
+
+      
 
     </>
   )
