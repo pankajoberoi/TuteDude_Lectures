@@ -1,11 +1,11 @@
+import { ToastContainer } from "react-toastify"
 import Cart from "./Components/Cart"
 import Notifictions from "./Components/Notifictions"
 import ProductList from "./Components/ProductList"
 import UserForm from "./Components/UserForm"
 import CartProvider from "./Context/CartProvider"
 import NotificationsProvider from "./Context/NotificationsProvider"
-import { ToastContainer } from "react-toastify"
-import 'react-toastify/dist/ReactToastify.css';
+
 
 
 function App() {
@@ -13,15 +13,19 @@ function App() {
 
   return (
     <>
-      {/* <CartProvider>
+    <NotificationsProvider>
+      <CartProvider>
         <ProductList/>
         <Cart/>
-      </CartProvider> */}
+        <Notifictions/>
+        <ToastContainer/>
+      </CartProvider>
+    </NotificationsProvider>
 
       <NotificationsProvider>
         <UserForm/>
         <Notifictions/>
-        <ToastContainer />
+        <ToastContainer/>
       </NotificationsProvider>
       
 
