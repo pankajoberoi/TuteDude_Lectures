@@ -6,6 +6,15 @@ import Welcome from './Welcome'
 
 const Cart = () => {
 
+    const items=[
+        {
+            id:1,name:"Laptop",price:50000,availability:"true"
+        },{
+            id:2,name:"Mobile",price:20000,availability:"false"
+        },{
+            id:3,name:"Headphones",price:2000,availability:"true"
+        }
+    ]
   
   const router=createBrowserRouter([
     {
@@ -14,11 +23,11 @@ const Cart = () => {
     },
     {
         path:"/products",
-        element:<ProductList/>
+        element:<ProductList items={items}/>
     },
     {
         path:"products/:id",
-        element:<Product/>
+        element:<Product items={items}/>
     },
   
 ])
