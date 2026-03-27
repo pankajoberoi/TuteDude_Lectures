@@ -1,15 +1,12 @@
 import React from 'react'
 import Sample from './Components/Sample'
-import Expensive from './Components/Expensive'
-import Dashboard from './Components/Dashboard'
+import Parent from './Components/Parent'
 
 const App = () => {
   return (
     <div>
       {/* <Sample/> */}
-      {/* <Expensive/> */}
-
-      <Dashboard/>
+      <Parent/>
     </div>
   )
 }

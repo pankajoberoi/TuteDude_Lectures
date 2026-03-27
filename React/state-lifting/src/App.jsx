@@ -1,5 +1,5 @@
 import Quantity from "./Components/Quantity"
-import { useState } from "react"
+// import { useState } from "react"
 import Total from "./Components/Total"
 import SearchApp from "./Components/SearchApp"
 
