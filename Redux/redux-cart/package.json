@@ -1,5 +1,5 @@
 {
-  "name": "cart",
+  "name": "redux-cart",
   "private": true,
   "version": "0.0.0",
   "type": "module",

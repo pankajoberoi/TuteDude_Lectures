@@ -2,16 +2,16 @@ export const products = [
   {
     id: 1,
     name: "Laptop",
-    price: 50000,
+    price: 80000,
   },
   {
     id: 2,
     name: "Mobile",
-    price: 20000,
+    price: 50000,
   },
   {
     id: 3,
     name: "Headphones",
-    price: 3000,
+    price: 2000,
   },
 ];
