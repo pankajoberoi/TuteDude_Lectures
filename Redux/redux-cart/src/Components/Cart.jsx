@@ -1,13 +1,14 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { removeFromCart } from '../Features/CartSlice'
+import { removeFromCart } from '../Features/cart/CartSlice'
+import { useAppDispatch, useAppSelector } from '../Store/hooks'
+import { selectCartItems, selectCartTotal } from '../Features/cart/cartSelectors'
 
 const Cart = () => {
 
 
-    const cartItems=useSelector((state)=>state.cart.items)
-
-    const dispatch=useDispatch()
+    const cartItems=useAppSelector(selectCartItems)
+    const total=useAppSelector(selectCartTotal)
+    const dispatch=useAppDispatch()
 
     function handleRemove(id){
         dispatch(removeFromCart(id))
@@ -24,6 +25,8 @@ const Cart = () => {
                 <button onClick={()=>handleRemove(item.id)}>Remove</button>
             </div>
         ))}
+
+        <h3>Total : Rs{total}</h3>
 
 
     </div>

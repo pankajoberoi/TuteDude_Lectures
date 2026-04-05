@@ -1,15 +1,18 @@
-import React from 'react'
 import {products} from '../Data/Products'
 import { useDispatch } from 'react-redux'
-import { addToCart } from '../Features/CartSlice'
+import { addToCart } from '../Features/cart/CartSlice'
+import { addNotification } from '../Features/notification/notification'
+
+
 const ProductList = () => {
 
     const dispatch=useDispatch()
-
+    
 
     function handleAdd(product){
-        // dispatch a action
+
         dispatch(addToCart(product))
+        dispatch(addNotification(`${product.name} added to cart`))
     }
 
 
